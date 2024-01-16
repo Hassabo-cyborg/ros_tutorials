@@ -15,12 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 # System dependencies are found with CMake's conventions
-find_package(Boost REQUIRED COMPONENTS system
-   roscpp
-   rospy
-   std_msgs
-   message_generation
-)
+# find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -59,10 +54,11 @@ add_message_files(
 )
 
 ## Generate services in the 'srv' folder
-add_service_files(
+add_service_files (
   FILES
   AddTwoInts.srv
 )
+
 
 ## Generate actions in the 'action' folder
 # add_action_files(
